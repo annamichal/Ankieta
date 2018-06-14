@@ -32,7 +32,7 @@ h1, h6, p{
 }
 
 h1 {
-	font-size: 28px;
+	font-size: 24px;
 }
 
 p {
@@ -48,8 +48,17 @@ h6, #survey-form, legend {
 	padding-top: 25px;
 }
 
-#name, #email, #age, #role {
+#name-label, #email-label, #number-label, #dropdown {
 	border: 1px;
 	border-color: aquamarine;
 	border-style: solid;
+}
+
+.form-check-input {
+	width: 20px; 
+	height: 20px;
+}
+
+.form-check-label {
+	padding-left: 5px;
 }
