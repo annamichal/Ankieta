@@ -1,0 +1,56 @@
+body {
+	width: 95vw;
+	margin: auto;
+}
+
+@media (min-width: 768px) {
+	.container {
+		width: 75vw;
+	}
+	body {
+		width: 80vw;
+		margin: auto;
+	}
+}
+
+@media (min-width: 992px) {
+	.container {
+		width: 50vw;
+	}
+	body {
+		width: 65vw;
+		margin: auto;
+	}
+}
+
+.form-row {
+	padding: .5rem;
+}
+
+h1, h6, p{
+	text-align: center;
+}
+
+p {
+	font-size: 10px;
+}
+
+legend {
+	font-size: 16px
+}
+
+#survey-form {
+	font-size: 16px;
+}
+
+.row {
+	padding-left: 25px;
+	padding-top: 25px;
+}
+
+#name, #email, #age, #role {
+	border: 1px;
+	border-color: aquamarine;
+	border-style: solid;
+}
+

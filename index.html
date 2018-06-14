@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="pl">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+	<!-- Responsive meta tag -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!--Odwołnanie do css-->
+	<link rel="stylesheet" href="css/strona.css">
+
+	<title>Ankieta 1</title>
+</head>
+
+<body>
+	<div class="jumbotron jumbotron-fluid">
+		<div class="container">
+			<h1 id="title">ANKIETA</h1>
+			<h6 id="description">Powiedz nam co sądzisz o swojej ostatniej wizycie w RESTAURACJI.</h6>
+			<p> Ankieta dostępna dla osób mających co nalmniej 16 lat<br>* Pola wymagane</p>
+			
+			<!-- form -->
+			<form action="#" method="post" id="survey-form" autocomplete="off">
+				<!-- name -->
+				<div class="form-row row">
+					<div class="col-sm-2 offset-sm-3">
+						<label for="name">* Imię:</label>
+					</div>
+					<div class="col-sm-6">
+						<input type="text" class="form-control" id="name" name="imie" placeholder="Wpisz swoje imię" required autofocus>
+					</div>
+				</div>
+				<!-- email -->
+				<div class="form-row row">
+					<div class="col-sm-2 offset-sm-3">
+						<label for="email">* E-mail:</label>
+					</div>
+					<div class="col-sm-6">
+						<input type="email" class="form-control is-valid" id="email" name="e-mail" placeholder="Wpisz adres e-mail" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+					</div>
+				</div>
+				<!-- age -->
+				<div class="form-row row">
+					<div class="col-sm-2 offset-sm-3">
+						<label for="age">* Wiek:</label>
+					</div>
+					<div class="col-sm-6">
+						<input type="number" class="form-control is-valid" id="age" name="wiek" min="16" max="120" required>
+					</div>
+				</div>
+				<!-- role -->
+				<div class="form-row row">
+					<div class="col-sm-5">
+						<label for="role">Wybierz stwierdzenie, które najlepiej opisuje Twoją sytuację zawodową:</label>
+					</div>
+					<div class="form-group col-sm-6">
+						<select id="role" name="zawód" class="form-control">
+							<option>Rozwiń listę i wybierz</option>
+							<option>uczeń</option>
+							<option>student</option>
+							<option>pracownik na pełny etat</option>
+							<option>pracownik dorywczy</option>
+							<option>businessmann</option>
+							<option>urzędnik</option>
+							<option>emeryt</option>
+							<option>nieaktywny zawodowo</option>
+						</select>
+					</div>
+				</div>
+				<!--radios recommend -->
+				<div class="form-group row">
+					<label class="col-form-label col-sm-5">Na ile prawdopodobne jest, że poleciłbyś RESTAURACJĘ swoim znajomym?</label>
+					<div class="col-sm-6 offset-sm-1">
+						<div class="form-check">
+							<input class="form-check-input" type="radio" id="radio1" name="polecanie" value="zdecydowanie-tak">
+							<label class="form-check-label" for="radio1">
+								Zdecydowanie tak
+							</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" id="radio2" name="polecanie" value="prawdopodobnie-tak">
+							<label class="form-check-label" for="radio2">
+									Prawdopodobnie tak
+								</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" id="radio3" name="polecanie" value="prawdopodobnie-nie">
+							<label class="form-check-label" for="radio3">
+									Prawdopodobnie nie
+								</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" id="radio4" name="polecanie" value="zdecydowanie-nie">
+							<label class="form-check-label" for="radio4">
+									Zdecydowanie nie
+								</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" id="radio5" name="polecanie" value="nie-wiem">
+							<label class="form-check-label" for="radio5">
+									Nie wiem
+								</label>
+						</div>
+					</div>
+				</div>
+				<!-- checkbox positives -->
+				<div class="form-group row">
+					<label class="col-sm-5">Co, według Ciebie, jest mocną stroną RESTAURACJI?</label>
+					<div class="col-sm-6 offset-sm-1">
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" name="pozytywy[]" value="lokalizacja" id="positiveCheck1">
+							<label class="form-check-label" for="positiveCheck1">
+						Lokalizacja
+					</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" name="pozytywy[]" value="wystroj" id="positiveCheck2">
+							<label class="form-check-label" for="positiveCheck2">
+						Wystrój wnętrza
+					</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" name="pozytywy[]" value="obsługa" id="positiveCheck3">
+							<label class="form-check-label" for="positiveCheck3">
+								Obsługa
+							</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" name="pozytywy[]" value="menu" id="positiveCheck4">
+							<label class="form-check-label" for="positiveCheck4">
+								Menu
+							</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" name="pozytywy[]" value="potrawy" id="positiveCheck5">
+							<label class="form-check-label" for="positiveCheck5">
+								Jakość potraw
+							</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" name="pozytywy[]" value="atmosfera" id="positiveCheck6">
+							<label class="form-check-label" for="positiveCheck6">
+								Atmosfera miejsca
+							</label>
+						</div>
+					</div>
+				</div>
+				<!-- checkbox negatives -->
+				<div class="form-group row">
+					<label class="col-sm-5">Co, według Ciebie, jest złego w RESTAURACJI?</label>
+					<div class="col-sm-6 offset-sm-1">
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" name="negatywy[]" value="lokalizacja" id="negativeCheck1">
+							<label class="form-check-label" for="negativeCheck1">
+										Lokalizacja
+									</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" name="negatywy[]" value="wystroj" id="negativeCheck2">
+							<label class="form-check-label" for="negativeCheck2">
+										Wystrój wnętrza
+									</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" name="negatywy[]" value="obsluga" id="negativeCheck3">
+							<label class="form-check-label" for="negativeCheck3">
+										Obsługa
+									</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" name="negatywy[]" value="menu" id="negativeCheck4">
+							<label class="form-check-label" for="negativeCheck4">
+										Menu
+									</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" name="negatywy[]" value="potrawy" id="negativeCheck5">
+							<label class="form-check-label" for="negativeCheck5">
+										Jakość potraw
+									</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" name="negatywy[]" value="atmosfera" id="negativeCheck6">
+							<label class="form-check-label" for="negativeCheck6">
+										Atmosfera miejsca
+									</label>
+						</div>
+					</div>
+				</div>
+				<!-- coments-->
+				<div class="form-group row">
+					<label class="col-sm-5">Jakieś komentarze lub sugestie?</label>
+					<div class="col-sm-6 offset-sm-1">
+						<textarea class="form-control" rows="2" id="comment" placeholder="Napisz kilka zdań"></textarea>
+					</div>
+				</div>
+				<div class="row justify-content-center">
+					<button type="submit" class="btn btn-primary col-4 col-sm-3 col-md-2">Wyślij</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</body>
+
+</html>
